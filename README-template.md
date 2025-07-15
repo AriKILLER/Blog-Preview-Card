@@ -12,11 +12,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,6 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
+ Screenshot of my final result:
+ 
 ![](./screenshot.jpg)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
@@ -45,6 +43,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+Started pretty quickly and much more effective than the QR Code challenge as I already had a base thanks to that challenge. Managed to get the structure, the css, fonts, etc... Pretty much together in just some minutes.
+
+Next, I need to figure out how to make everything fit correctly into place, as now there are 2 div class one inside the other and pretty much everything needs a bit of css to make it look like the preview, but its getting there.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -60,12 +62,25 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I can say that Im enjoying this one more as I noticed now I know how to do it properly and I can start doing it rather than guess how to do it.
 
-To see how you can add code snippets, see below:
+Its true that having two div classes at first was a bit hard to manage but 5 minutes later had it figured out as I didnt know I had to put one inside the other, but pretty cool.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="card">
+  <img src="./assets/images/illustration-article.svg" alt="illustration-article">
+  <div class="content">
+    <h2>Learning</h2>
+
+    <p>Published 21 Dec 2023</p>
+
+    <h1>HTML & CSS foundations</h1>
+
+    <p>languages are the backbone of every website, defining structure, content, and presentation.</p> 
+
+    <p>Greg Hooper</p>
+  </div>
+</div>
 ```
 ```css
 .proud-of-this-css {
@@ -78,22 +93,11 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 **Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
@@ -102,9 +106,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

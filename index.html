@@ -5,30 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree", sans-serif;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      width: 320px;
+      max-width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 25px rgba(0, 0,0,0.05);
+      padding: 16px;
+      background-color: white;
+      border-radius: 20px;
+      display: block;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .content h2 {
+      color: hsl(0, 0%, 7%);
+      font-weight: 800;
+      font-size: 14px;
+      margin: 0;
+      background-color: hsl(47, 88%, 63%);
+      padding: 10px;
+      border-radius: 6px;
+      display: inline-block;
+      float: left;
+    }
   </style>
 </head>
 <body>
+<div class="card">
+  <img src="./assets/images/illustration-article.svg" alt="illustration-article">
+  <div class="content">
+    <h2>Learning</h2>
 
-  Learning
+    <p>Published 21 Dec 2023</p>
 
-  Published 21 Dec 2023
+    <h1>HTML & CSS foundations</h1>
 
-  HTML & CSS foundations
+    <p>languages are the backbone of every website, defining structure, content, and presentation.</p> 
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Greg Hooper</p>
   </div>
+</div>
 </body>
 </html>
