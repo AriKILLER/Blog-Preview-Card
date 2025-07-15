@@ -47,24 +47,24 @@ Started pretty quickly and much more effective than the QR Code challenge as I a
 
 Next, I need to figure out how to make everything fit correctly into place, as now there are 2 div class one inside the other and pretty much everything needs a bit of css to make it look like the preview, but its getting there.
 
+It actually wasnt as easy as I thought, I changed a few things, using strong and small elements to have an easier time giving each thing an style, and it actually made it look much closer to the final design, but I can see that some things are off. Might go back to trial and error as I dont know what to change to make it look more alike.
+
+Still need to make it react to the cursor.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
 I can say that Im enjoying this one more as I noticed now I know how to do it properly and I can start doing it rather than guess how to do it.
 
 Its true that having two div classes at first was a bit hard to manage but 5 minutes later had it figured out as I didnt know I had to put one inside the other, but pretty cool.
+
+Use more elements to be able to add an style to each thing, as every phrase as a different one. It looks better now but I can see its not perfect yet.
+
+This is how the HTML was before:
 
 ```html
 <div class="card">
@@ -82,14 +82,55 @@ Its true that having two div classes at first was a bit hard to manage but 5 min
   </div>
 </div>
 ```
+
+And this is how is for now:
+
+```html
+<div class="card">
+  <img src="./assets/images/illustration-article.svg" alt="illustration-article">
+  <div class="content">
+    <h2>Learning</h2>
+
+    <small>Published 21 Dec 2023</small>
+
+    <h1>HTML & CSS foundations</h1>
+
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p> 
+
+
+    <img src="./assets/images/image-avatar.webp" alt="avatar">
+    <strong>Greg Hooper</strong>
+  </div>
+</div>
+```
+
+Used new things in the css like clear and finally understood display and float, now I know those two usually dont go together.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.content small{
+  color:hsl(0, 0%, 42%);
+  font-size: 16px;
+  font-weight: 500;
+  display:flex;
+  float:left;
+  clear: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+How I did the small box for Learning:
+
+```css
+.content h2 {
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+  font-size: 14px;
+  margin: 0;
+  background-color: hsl(47, 88%, 63%);
+  padding: 10px;
+  border-radius: 6px;
+  float:left;
 }
 ```
 
