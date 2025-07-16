@@ -26,20 +26,12 @@ Users should be able to:
 
  Screenshot of my final result:
  
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./Screenshot.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://arikiller.github.io/Blog-Preview-Card/)
 
 ## My process
 
@@ -49,7 +41,9 @@ Next, I need to figure out how to make everything fit correctly into place, as n
 
 It actually wasnt as easy as I thought, I changed a few things, using strong and small elements to have an easier time giving each thing an style, and it actually made it look much closer to the final design, but I can see that some things are off. Might go back to trial and error as I dont know what to change to make it look more alike.
 
-Still need to make it react to the cursor.
+Still need to make it react to the pointer.
+
+Made it much more alike and was able to make it reactive to the pointer so the text turns yellow. Also made the shadow effect of the whole thing.
 
 ### Built with
 
@@ -63,6 +57,8 @@ I can say that Im enjoying this one more as I noticed now I know how to do it pr
 Its true that having two div classes at first was a bit hard to manage but 5 minutes later had it figured out as I didnt know I had to put one inside the other, but pretty cool.
 
 Use more elements to be able to add an style to each thing, as every phrase as a different one. It looks better now but I can see its not perfect yet.
+
+Learnt how to make text reactive to the pointer making it change color, so cool. And how to make a shadow effect.
 
 This is how the HTML was before:
 
@@ -134,16 +130,49 @@ How I did the small box for Learning:
 }
 ```
 
+How I made the text reactive:
+
+```css
+.content h1 {
+  color: hsl(0, 0%, 7%);
+  font-size: 24px;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.content h1:hover{
+  color: hsl(47, 88%, 63%);
+}
+```
+
+How I made the shadow effect:
+
+```css
+.card {
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+  padding: 16px;
+  background-color: white;
+  border-radius: 20px;
+  display: block;
+  border: 1px solid hsl(0, 0%, 7%);
+}
+```
+
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Im not comfortable yet with styling the page also it still takes me a bit on how to organise the structure and knowing what element works better for each different thing.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+But I have learnt a lot and feel a bit more comfortable knowing how to tell the difference between elements.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [@AriKILLER](https://github.com/AriKILLER)
+- Frontend Mentor - [@AriKILLER](https://www.frontendmentor.io/profile/AriKILLER)
+- Discord - [@Ari_KILLER]
